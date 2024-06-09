@@ -4,9 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "cz": "git-cz",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "czConfig": ".commitlintrc.json"
+    }
   },
   "dependencies": {
     "naive-ui": "^2.38.1",
@@ -18,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@vitejs/plugin-vue": "^5.0.4",
+    "cz-git": "^1.9.2",
     "path": "^0.12.7",
     "typescript": "^5.2.2",
     "unplugin-auto-import": "^0.17.5",
